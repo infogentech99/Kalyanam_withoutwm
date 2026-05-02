@@ -140,7 +140,7 @@ export default function Home() {
         {playing ? "⏸" : "▶"}
       </button>
 
-      <audio ref={audioRef} src="/assets/background_song_muslim.mp3" loop preload="auto" playsInline />
+      <audio ref={audioRef} src="/assets/Kalyanam_wedding_song.mp3" loop preload="auto" playsInline />
 
 
       {/* hero section */}

@@ -69,6 +69,41 @@ body {
   opacity:0;
 }
 
+
+@keyframes petalFall{
+
+  0%{
+    transform: translateY(-10vh) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
+    opacity:0;
+  }
+
+  10%{
+    opacity:1;
+  }
+
+  20%{
+    transform: translateY(60vh) translateX(-15px) scale(var(--scale)) rotate(calc(var(--rotate) + 40deg));
+  }
+
+  40%{
+    transform: translateY(130vh) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 100deg));
+  }
+
+  60%{
+    transform: translateY(180vh) translateX(-10px) scale(var(--scale)) rotate(calc(var(--rotate) + 160deg));
+  }
+
+  80%{
+    transform: translateY(240vh) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 220deg));
+  }
+
+  100%{
+    transform: translateY(300vh) translateX(-5px) scale(var(--scale)) rotate(calc(var(--rotate) + 280deg));
+    opacity:0;
+  }
+}
+
+
 @media (max-width: 768px){
 @keyframes petalFall{
 
@@ -104,12 +139,12 @@ body {
 
 
 
-
-
-@keyframes petalFall{
+/* Desktop (lg and above) */
+@media (min-width: 1024px) {
+  @keyframes petalFall{
 
   0%{
-    transform: translateY(-10vh) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
+    transform: translateY(-20px) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
     opacity:0;
   }
 
@@ -117,24 +152,28 @@ body {
     opacity:1;
   }
 
-  20%{
-    transform: translateY(60vh) translateX(-15px) scale(var(--scale)) rotate(calc(var(--rotate) + 40deg));
+  25%{
+    transform: translateY(1000px) translateX(-20px) scale(var(--scale)) rotate(calc(var(--rotate) + 60deg));
+    opacity:1;
   }
 
-  40%{
-    transform: translateY(130vh) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 100deg));
+  50%{
+    transform: translateY(2000px) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 120deg));
+    opacity:1;
   }
 
-  60%{
-    transform: translateY(180vh) translateX(-10px) scale(var(--scale)) rotate(calc(var(--rotate) + 160deg));
-  }
-
-  80%{
-    transform: translateY(240vh) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 220deg));
+  75%{
+    transform: translateY(3000px) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 200deg));
+    opacity:0.5;
   }
 
   100%{
-    transform: translateY(300vh) translateX(-5px) scale(var(--scale)) rotate(calc(var(--rotate) + 280deg));
+    transform: translateY(4000px) translateX(10px) scale(var(--scale)) rotate(calc(var(--rotate) + 260deg));
     opacity:0;
   }
+
+
 }
+}
+
+
